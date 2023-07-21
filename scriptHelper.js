@@ -1,16 +1,10 @@
-// Write your helper functions here!
+
 require('isomorphic-fetch');
 
-// function tester(test) {
-//    return console.log(test);
-// }
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
     let target = document.getElementById("missionTarget");
     target.innerHTML = 
-   // Here is the HTML formatting for our mission target div.
-   /*
-   */
                 `<h2>Mission Destination</h2>
                 <ol>
                     <li>Name: ${name}</li>
@@ -34,16 +28,12 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-    // let items = document.getElementById("faultyItems");
-    // console.log(document.getElementById("faultyItems"))
-    // console.dir(list.style.visibilty);
-    // console.log(list.style.visibilty);
+
     let pilotStatus = document.getElementById("pilotStatus");
     let copilotStatus = document.getElementById("copilotStatus");
     let fuelStatus = document.getElementById("fuelStatus");
     let cargoStatus = document.getElementById("cargoStatus");
     let launchStatus = document.getElementById("launchStatus");
-    // let target = document.getElementById("missionTarget");
     
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
         alert("All fields required.");
@@ -77,9 +67,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             launchStatus.style.color = "rgb(65, 159, 106)";
         }
     }
-    
-    
-   
 }
 
 async function myFetch() {
@@ -87,10 +74,6 @@ async function myFetch() {
 
     planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
         return response.json();
-        // response.json().then( function(json) {
-        //    console.log(json[0]);
-        //    console.log(json);
-        // });
     });
     return planetsReturned;
 }
