@@ -12,20 +12,20 @@ window.addEventListener("load", function() {
         console.log("test")
         // alert("test");
         event.preventDefault();
-        // formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
+        formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
     });
-    // let list = document.getElementById("faultyItems");
-    // // list.style.visibility = "hidden";
-    // let pilot = document.querySelector("input[name=pilotName");
-    // let copilot = document.querySelector("input[name=copilotName");
-    // let fuelLevel = document.querySelector("input[name=fuelLevel");
-    // let cargoLevel = document.querySelector("input[name=cargoMass");
+    let list = document.getElementById("faultyItems");
+    // list.style.visibility = "hidden";
+    let pilot = document.querySelector("input[name=pilotName");
+    let copilot = document.querySelector("input[name=copilotName");
+    let fuelLevel = document.querySelector("input[name=fuelLevel");
+    let cargoLevel = document.querySelector("input[name=cargoMass");
 
-    // let pilotStatus = document.getElementById("pilotStatus");
-    // let copilotStatus = document.getElementById("copilotStatus");
-    // let fuelStatus = document.getElementById("fuelStatus");
-    // let cargoStatus = document.getElementById("cargoStatus");
-    // let launchStatus = document.getElementById("launchStatus");
+    let pilotStatus = document.getElementById("pilotStatus");
+    let copilotStatus = document.getElementById("copilotStatus");
+    let fuelStatus = document.getElementById("fuelStatus");
+    let cargoStatus = document.getElementById("cargoStatus");
+    let launchStatus = document.getElementById("launchStatus");
     
     
     // console.log(list);

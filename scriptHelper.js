@@ -16,27 +16,28 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    */
 }
 
-// function validateInput(testInput) {
-//     let numInput = Number(testInput);
-//     if (testInput === "") {
-//         return "Empty";
-//     } else if (isNaN(numInput)) {
-//         return "Not a Number";
-//     } else if (numInput) {
-//         return "Is a Number";
-//     }
-// }
+function validateInput(testInput) {
+    let numInput = Number(testInput);
+    if (testInput === "") {
+        return "Empty";
+    } else if (isNaN(numInput)) {
+        return "Not a Number";
+    } else if (numInput) {
+        return "Is a Number";
+    }
+}
 
-// function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-//     // let items = document.getElementById("faultyItems");
-//     // console.log(document.getElementById("faultyItems"))
-//     // console.dir(list.style.visibilty);
-//     // console.log(list.style.visibilty);
+function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    // let items = document.getElementById("faultyItems");
+    // console.log(document.getElementById("faultyItems"))
+    // console.dir(list.style.visibilty);
+    // console.log(list.style.visibilty);
     
-//     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
-//         alert("All fields required.");
-//     } else if (validateInput(pilot) === "Ia a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-//         alert("Please enter valid information.")
+    if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
+        alert("All fields required.");
+    } else if (validateInput(pilot) === "Ia a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
+        alert("Please enter valid information.")
+    }
 //     } else {
 
 //         list.style.visibility = "visible";
