@@ -4,8 +4,13 @@
 
 
 
+
+
+
 window.addEventListener("load", function() {
-    console.log(myFetch());
+    // console.log(myFetch());
+    // console.log(addDestinationInfo()
+    tester("anything");
 
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
@@ -26,13 +31,16 @@ window.addEventListener("load", function() {
     let fuelStatus = document.getElementById("fuelStatus");
     let cargoStatus = document.getElementById("cargoStatus");
     let launchStatus = document.getElementById("launchStatus");
+    let target = document.getElementById("missionTarget");
+    // console.log(target)
+
     
     
     // console.log(list);
     
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
-   let listedPlanetsResponse;
+   let listedPlanetsResponse = myFetch();
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
        console.log(listedPlanets);
