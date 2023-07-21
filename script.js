@@ -5,7 +5,7 @@
 
 
 window.addEventListener("load", function() {
-    // console.log(validateInput(6));
+    console.log(myFetch());
 
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
         formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
     });
     let list = document.getElementById("faultyItems");
-    // list.style.visibility = "hidden";
+    list.style.visibility = "hidden";
     let pilot = document.querySelector("input[name=pilotName");
     let copilot = document.querySelector("input[name=copilotName");
     let fuelLevel = document.querySelector("input[name=fuelLevel");
