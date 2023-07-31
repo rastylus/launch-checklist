@@ -1,5 +1,6 @@
 
 window.addEventListener("load", function() {
+    fetch = fetch;
 
    let listedPlanets;
    let listedPlanetsResponse = myFetch();
@@ -14,11 +15,12 @@ window.addEventListener("load", function() {
 
    form.addEventListener("submit", function(event) {
        event.preventDefault();
+        //   list.style.visibility = "hidden";
        formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
    });
 
    let list = document.getElementById("faultyItems");
-   list.style.visibility = "hidden";
+//    list.style.visibility = "hidden";
    let pilot = document.querySelector("input[name=pilotName");
    let copilot = document.querySelector("input[name=copilotName");
    let fuelLevel = document.querySelector("input[name=fuelLevel");
